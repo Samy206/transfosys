@@ -1,0 +1,2103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generate" nsURI="myjava::generator::common::generate" startHeaderPosition="29" endHeaderPosition="136">
+    <input>
+      <takesTypesFrom href="http:///myJava#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateElement" visibility="Public" main="true">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/substring">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="2">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;&#xA;import librairie.*;&#xA;import javax.swing.JPanel;&#xA;&#xA;&#x9;public class "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateElement/%/%.5/e">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="e">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JTypeDecl)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JClasse/extends"/>
+          </iterSet>
+          <before xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="extends">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </before>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;{&#xA;&#x9;&#x9;private static final long serialVersionUID = 1L;&#xA;&#xA;&#x9;&#x9;public static void main(String"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" args) {&#xA;&#x9;&#x9;&#x9;new "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="(&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;, 400, 900);&#xA;&#x9;&#x9;}&#xA;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;private "/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/typeName">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/generateElement/%/%.13/a">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//DonneeTypee/type"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/generateElement/%/%.13/a">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//DonneeTypee/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;= "/>
+            <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExpression">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <argument xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/26">
+                  <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JAttribut/val_init"/>
+              </argument>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/generateElement/%/%.13/a">
+                    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JAttribut/val_init"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsUndefined"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;"/>
+          <loopVariable name="a">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JAttribut)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JClasse/attributs"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9; &#x9;public "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="void "/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="m" referredVariable="/0/generateElement/%/%.15/m">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" eType="/31/JMethode">
+                <referredType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+            </ifExpr>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="m" referredVariable="/0/generateElement/%/%.15/m">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JMethode/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" (&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;"/>
+            <body xsi:type="mtl:TemplateInvocation" definition="/0/typeName">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <argument xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/generateElement/%/%.15/%.5/p">
+                  <eType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//DonneeTypee/type"/>
+              </argument>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/generateElement/%/%.15/%.5/p">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//DonneeTypee/name"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+            <loopVariable name="p">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JParametre)">
+              <source xsi:type="ocl.ecore:VariableExp" name="m" referredVariable="/0/generateElement/%/%.15/m">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JMethode/parametres"/>
+            </iterSet>
+            <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </each>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=") {&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+            <body xsi:type="mtl:TemplateInvocation" definition="/0/generateInstruction">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <argument xsi:type="ocl.ecore:VariableExp" name="i" referredVariable="/0/generateElement/%/%.15/%.7/i">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+              </argument>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+            <loopVariable name="i">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JInstruction)">
+              <source xsi:type="ocl.ecore:VariableExp" name="m" referredVariable="/0/generateElement/%/%.15/m">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JMethode/instructions"/>
+            </iterSet>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;}&#xA;"/>
+          <loopVariable name="m">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JMethode)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JClasse/methodes"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;}&#xA;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aJClasse" referredVariable="/0/generateElement/aJClasse">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".java">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <parameter name="aJClasse">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="typeName" visibility="Public">
+      <parameter name="jt">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="typeName" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="jt" referredVariable="/0/typeName.1/jt">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeRef"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//TypeRef/type"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+      </body>
+      <parameter name="jt">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeRef"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="typeName" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="jt" referredVariable="/0/typeName.2/jt">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeBase"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//TypeBase/name"/>
+      </body>
+      <parameter name="jt">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeBase"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateExpression" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;template_expression"/>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateExpression" visibility="Public">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExpression">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/70">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JAppelMethode/cible"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/69">
+                <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JAppelMethode/cible"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsUndefined"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
+        </ifExpr>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.1/e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JAppelMethode/methode"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="(&#xA;"/>
+      <body xsi:type="mtl:ForBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExpression">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/generateExpression.1/%.4/a">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <loopVariable name="a">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+        </loopVariable>
+        <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JExpression)">
+          <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.1/e">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JAppelMethode/arguments"/>
+        </iterSet>
+        <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </each>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;)"/>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateExpression" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;new "/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.2/e">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JCreation/classe"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//JTypeDecl/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="(&#xA;"/>
+      <body xsi:type="mtl:ForBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExpression">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="a" referredVariable="/0/generateExpression.2/%.3/a">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <loopVariable name="a">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+        </loopVariable>
+        <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/10/OrderedSet(JExpression)">
+          <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.2/e">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JCreation/arguments"/>
+        </iterSet>
+        <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </each>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;)"/>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateExpression" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&quot;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.3/e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//StringConstante"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//StringConstante/valeur"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;"/>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//StringConstante"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateExpression" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.4/e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//IntConstante"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//IntConstante/valeur"/>
+      </body>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//IntConstante"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateExpression" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//DonneeTypee"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateExpression.5/e">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//JVarRef"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//JVarRef/variable"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//DonneeTypee/name"/>
+      </body>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JVarRef"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateInstruction" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;instructions"/>
+      <parameter name="i">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateInstruction" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="mtl:TemplateInvocation" definition="/0/typeName">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateInstruction.1/d">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//DonneeTypee/type"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="d" referredVariable="/0/generateInstruction.1/d">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http:///myJava#//DonneeTypee/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = "/>
+      <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExpression">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/114">
+            <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http:///myJava#//Declaration/expression"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";"/>
+      <parameter name="d">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateInstruction" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExpression">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="e" referredVariable="/0/generateInstruction.2/e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";"/>
+      <parameter name="e">
+        <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="substring">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="startIndex">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateElement">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateElement"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aJClasse">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="typeName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/typeName"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="jt">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="typeName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/typeName.1"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="jt">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeRef"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="typeName">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/typeName.2"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="jt">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeBase"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateExpression">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateExpression"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateExpression">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateExpression.1"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateExpression">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateExpression.2"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateExpression">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateExpression.3"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//StringConstante"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateExpression">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateExpression.4"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//IntConstante"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateExpression">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateExpression.5"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JVarRef"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateInstruction">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateInstruction"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="i">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateInstruction">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateInstruction.1"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="d">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateInstruction">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateInstruction.2"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="e">
+          <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JClasse_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JClasse"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JType_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JType"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_TypeRef_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//TypeRef"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_TypeBase_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//TypeBase"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JExpression_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JExpression"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JAppelMethode_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JAppelMethode"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JCreation_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JCreation"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_StringConstante_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//StringConstante"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_IntConstante_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//IntConstante"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JVarRef_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JVarRef"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_JInstruction_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//JInstruction"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="myJava_Declaration_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http:///myJava#//Declaration"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(JTypeDecl)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(JAttribut)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(JMethode)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(JParametre)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(JInstruction)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(JExpression)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JTypeDecl"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAttribut"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="JMethode">
+      <referredType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JParametre"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JClasse"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JType"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeRef"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeRef"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeRef"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeBase"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeBase"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//TypeBase"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JAppelMethode"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JCreation"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//StringConstante"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//StringConstante"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//StringConstante"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//IntConstante"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//IntConstante"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//IntConstante"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JVarRef"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JVarRef"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JVarRef"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JInstruction"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//Declaration"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http:///myJava#//JExpression"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateElement">
+      <details key="start" value="67"/>
+      <details key="end" value="1101"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateElement/%">
+      <details key="start" value="139"/>
+      <details key="end" value="1089"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateElement/%/%">
+      <details key="start" value="194"/>
+      <details key="end" value="202"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateElement/%/%.1">
+      <details key="start" value="203"/>
+      <details key="end" value="229"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateElement/%/%.1/%">
+      <details key="start" value="203"/>
+      <details key="end" value="216"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateElement/%/%.1/%/aJClasse">
+      <details key="start" value="203"/>
+      <details key="end" value="211"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateElement/%/%.1/%.1">
+      <details key="start" value="227"/>
+      <details key="end" value="228"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateElement/%/%.2">
+      <details key="start" value="231"/>
+      <details key="end" value="296"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateElement/%/%.3">
+      <details key="start" value="297"/>
+      <details key="end" value="310"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateElement/%/%.3/aJClasse">
+      <details key="start" value="297"/>
+      <details key="end" value="305"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateElement/%/%.4">
+      <details key="start" value="312"/>
+      <details key="end" value="313"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateElement/%/%.5">
+      <details key="start" value="315"/>
+      <details key="end" value="411"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateElement/%/%.5/%">
+      <details key="start" value="391"/>
+      <details key="end" value="393"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateElement/%/%.5/%.1">
+      <details key="start" value="394"/>
+      <details key="end" value="400"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateElement/%/%.5/%.1/e">
+      <details key="start" value="394"/>
+      <details key="end" value="395"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateElement/%/%.5/%.2">
+      <details key="start" value="402"/>
+      <details key="end" value="403"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateElement/%/%.5/e">
+      <details key="start" value="321"/>
+      <details key="end" value="334"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateElement/%/%.5/%.3">
+      <details key="start" value="337"/>
+      <details key="end" value="353"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateElement/%/%.5/%.3/aJClasse">
+      <details key="start" value="337"/>
+      <details key="end" value="345"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateElement/%/%.5/%.4">
+      <details key="start" value="363"/>
+      <details key="end" value="372"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateElement/%/%.5/%.5">
+      <details key="start" value="385"/>
+      <details key="end" value="388"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateElement/%/%.6">
+      <details key="start" value="412"/>
+      <details key="end" value="499"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateElement/%/%.7">
+      <details key="start" value="500"/>
+      <details key="end" value="504"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateElement/%/%.8">
+      <details key="start" value="506"/>
+      <details key="end" value="522"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateElement/%/%.9">
+      <details key="start" value="523"/>
+      <details key="end" value="536"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateElement/%/%.9/aJClasse">
+      <details key="start" value="523"/>
+      <details key="end" value="531"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateElement/%/%.10">
+      <details key="start" value="538"/>
+      <details key="end" value="540"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateElement/%/%.11">
+      <details key="start" value="541"/>
+      <details key="end" value="554"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateElement/%/%.11/aJClasse">
+      <details key="start" value="541"/>
+      <details key="end" value="549"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateElement/%/%.12">
+      <details key="start" value="556"/>
+      <details key="end" value="575"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateElement/%/%.13">
+      <details key="start" value="577"/>
+      <details key="end" value="759"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateElement/%/%.13/%">
+      <details key="start" value="620"/>
+      <details key="end" value="630"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateElement/%/%.13/%.1">
+      <details key="start" value="631"/>
+      <details key="end" value="648"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateElement/%/%.13/%.1/%">
+      <details key="start" value="631"/>
+      <details key="end" value="637"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateElement/%/%.13/%.1/%/a">
+      <details key="start" value="631"/>
+      <details key="end" value="632"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateElement/%/%.13/%.2">
+      <details key="start" value="650"/>
+      <details key="end" value="651"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateElement/%/%.13/%.3">
+      <details key="start" value="652"/>
+      <details key="end" value="658"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateElement/%/%.13/%.3/a">
+      <details key="start" value="652"/>
+      <details key="end" value="653"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateElement/%/%.13/%.4">
+      <details key="start" value="660"/>
+      <details key="end" value="661"/>
+      <details key="line" value="26"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateElement/%/%.13/%.5">
+      <details key="start" value="663"/>
+      <details key="end" value="749"/>
+      <details key="line" value="26"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateElement/%/%.13/%.5/%">
+      <details key="start" value="704"/>
+      <details key="end" value="709"/>
+      <details key="line" value="27"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateElement/%/%.13/%.5/%.1">
+      <details key="start" value="710"/>
+      <details key="end" value="739"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateElement/%/%.13/%.5/%.1/%">
+      <details key="start" value="710"/>
+      <details key="end" value="718"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateElement/%/%.13/%.5/%.1/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateElement/%/%.13/%.5/%.2">
+      <details key="start" value="741"/>
+      <details key="end" value="742"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateElement/%/%.13/%.5/%.3">
+      <details key="start" value="667"/>
+      <details key="end" value="702"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateElement/%/%.13/%.5/%.3/%">
+      <details key="start" value="672"/>
+      <details key="end" value="701"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateElement/%/%.13/%.5/%.3/%/%">
+      <details key="start" value="673"/>
+      <details key="end" value="683"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateElement/%/%.13/%.5/%.3/%/%/a">
+      <details key="start" value="673"/>
+      <details key="end" value="674"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateElement/%/%.13/%.6">
+      <details key="start" value="749"/>
+      <details key="end" value="751"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateElement/%/%.13/a">
+      <details key="start" value="583"/>
+      <details key="end" value="596"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateElement/%/%.13/%.7">
+      <details key="start" value="599"/>
+      <details key="end" value="617"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateElement/%/%.13/%.7/aJClasse">
+      <details key="start" value="599"/>
+      <details key="end" value="607"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateElement/%/%.14">
+      <details key="start" value="760"/>
+      <details key="end" value="761"/>
+      <details key="line" value="30"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateElement/%/%.15">
+      <details key="start" value="764"/>
+      <details key="end" value="1077"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateElement/%/%.15/%">
+      <details key="start" value="805"/>
+      <details key="end" value="816"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateElement/%/%.15/%.1">
+      <details key="start" value="816"/>
+      <details key="end" value="856"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateElement/%/%.15/%.1/%">
+      <details key="start" value="846"/>
+      <details key="end" value="851"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateElement/%/%.15/%.1/%.1">
+      <details key="start" value="820"/>
+      <details key="end" value="845"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateElement/%/%.15/%.1/%.1/m">
+      <details key="start" value="821"/>
+      <details key="end" value="822"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateElement/%/%.15/%.1/%.1/%">
+      <details key="start" value="835"/>
+      <details key="end" value="843"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateElement/%/%.15/%.2">
+      <details key="start" value="856"/>
+      <details key="end" value="857"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateElement/%/%.15/%.3">
+      <details key="start" value="858"/>
+      <details key="end" value="864"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateElement/%/%.15/%.3/m">
+      <details key="start" value="858"/>
+      <details key="end" value="859"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateElement/%/%.15/%.4">
+      <details key="start" value="866"/>
+      <details key="end" value="869"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateElement/%/%.15/%.5">
+      <details key="start" value="872"/>
+      <details key="end" value="970"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateElement/%/%.15/%.5/%">
+      <details key="start" value="926"/>
+      <details key="end" value="930"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateElement/%/%.15/%.5/%.1">
+      <details key="start" value="931"/>
+      <details key="end" value="948"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateElement/%/%.15/%.5/%.1/%">
+      <details key="start" value="931"/>
+      <details key="end" value="937"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generateElement/%/%.15/%.5/%.1/%/p">
+      <details key="start" value="931"/>
+      <details key="end" value="932"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generateElement/%/%.15/%.5/%.2">
+      <details key="start" value="950"/>
+      <details key="end" value="951"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generateElement/%/%.15/%.5/%.3">
+      <details key="start" value="952"/>
+      <details key="end" value="958"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/generateElement/%/%.15/%.5/%.3/p">
+      <details key="start" value="952"/>
+      <details key="end" value="953"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/generateElement/%/%.15/%.5/%.4">
+      <details key="start" value="960"/>
+      <details key="end" value="961"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/generateElement/%/%.15/%.5/p">
+      <details key="start" value="878"/>
+      <details key="end" value="892"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/generateElement/%/%.15/%.5/%.5">
+      <details key="start" value="895"/>
+      <details key="end" value="907"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/generateElement/%/%.15/%.5/%.5/m">
+      <details key="start" value="895"/>
+      <details key="end" value="896"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/generateElement/%/%.15/%.5/%.6">
+      <details key="start" value="920"/>
+      <details key="end" value="923"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/generateElement/%/%.15/%.6">
+      <details key="start" value="970"/>
+      <details key="end" value="974"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/generateElement/%/%.15/%.7">
+      <details key="start" value="978"/>
+      <details key="end" value="1062"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/generateElement/%/%.15/%.7/%">
+      <details key="start" value="1020"/>
+      <details key="end" value="1025"/>
+      <details key="line" value="37"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/generateElement/%/%.15/%.7/%.1">
+      <details key="start" value="1026"/>
+      <details key="end" value="1049"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/generateElement/%/%.15/%.7/%.1/i">
+      <details key="start" value="1026"/>
+      <details key="end" value="1027"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/generateElement/%/%.15/%.7/%.2">
+      <details key="start" value="1051"/>
+      <details key="end" value="1052"/>
+      <details key="line" value="38"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/generateElement/%/%.15/%.7/i">
+      <details key="start" value="984"/>
+      <details key="end" value="1000"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/generateElement/%/%.15/%.7/%.3">
+      <details key="start" value="1003"/>
+      <details key="end" value="1017"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/generateElement/%/%.15/%.7/%.3/m">
+      <details key="start" value="1003"/>
+      <details key="end" value="1004"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/generateElement/%/%.15/%.8">
+      <details key="start" value="1063"/>
+      <details key="end" value="1068"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/generateElement/%/%.15/m">
+      <details key="start" value="770"/>
+      <details key="end" value="782"/>
+      <details key="line" value="31"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/generateElement/%/%.15/%.9">
+      <details key="start" value="785"/>
+      <details key="end" value="802"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/generateElement/%/%.15/%.9/aJClasse">
+      <details key="start" value="785"/>
+      <details key="end" value="793"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/generateElement/%/%.16">
+      <details key="start" value="1078"/>
+      <details key="end" value="1082"/>
+      <details key="line" value="41"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/generateElement/%/%.17">
+      <details key="start" value="146"/>
+      <details key="end" value="175"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/generateElement/%/%.17/%">
+      <details key="start" value="146"/>
+      <details key="end" value="159"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/generateElement/%/%.17/%/aJClasse">
+      <details key="start" value="146"/>
+      <details key="end" value="154"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/generateElement/%/%.17/%.1">
+      <details key="start" value="167"/>
+      <details key="end" value="174"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/generateElement/%/%.18">
+      <details key="start" value="184"/>
+      <details key="end" value="191"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/generateElement/aJClasse">
+      <details key="start" value="100"/>
+      <details key="end" value="118"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/typeName">
+      <details key="start" value="1103"/>
+      <details key="end" value="1153"/>
+      <details key="line" value="46"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/typeName/jt">
+      <details key="start" value="1129"/>
+      <details key="end" value="1139"/>
+      <details key="line" value="46"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/typeName.1">
+      <details key="start" value="1155"/>
+      <details key="end" value="1224"/>
+      <details key="line" value="49"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/typeName.1/%">
+      <details key="start" value="1196"/>
+      <details key="end" value="1197"/>
+      <details key="line" value="50"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/typeName.1/%.1">
+      <details key="start" value="1198"/>
+      <details key="end" value="1210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/typeName.1/%.1/%">
+      <details key="start" value="1198"/>
+      <details key="end" value="1205"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/typeName.1/%.1/%/jt">
+      <details key="start" value="1198"/>
+      <details key="end" value="1200"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/typeName.1/jt">
+      <details key="start" value="1181"/>
+      <details key="end" value="1193"/>
+      <details key="line" value="49"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/typeName.2">
+      <details key="start" value="1226"/>
+      <details key="end" value="1291"/>
+      <details key="line" value="53"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/typeName.2/%">
+      <details key="start" value="1268"/>
+      <details key="end" value="1269"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/typeName.2/%.1">
+      <details key="start" value="1270"/>
+      <details key="end" value="1277"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/typeName.2/%.1/jt">
+      <details key="start" value="1270"/>
+      <details key="end" value="1272"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/typeName.2/jt">
+      <details key="start" value="1252"/>
+      <details key="end" value="1265"/>
+      <details key="line" value="53"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/generateExpression">
+      <details key="start" value="1293"/>
+      <details key="end" value="1379"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/generateExpression/%">
+      <details key="start" value="1347"/>
+      <details key="end" value="1367"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/generateExpression/e">
+      <details key="start" value="1329"/>
+      <details key="end" value="1344"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/generateExpression.1">
+      <details key="start" value="1381"/>
+      <details key="end" value="1632"/>
+      <details key="line" value="61"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/generateExpression.1/%">
+      <details key="start" value="1438"/>
+      <details key="end" value="1512"/>
+      <details key="line" value="62"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/generateExpression.1/%/%">
+      <details key="start" value="1473"/>
+      <details key="end" value="1475"/>
+      <details key="line" value="63"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/generateExpression.1/%/%.1">
+      <details key="start" value="1476"/>
+      <details key="end" value="1502"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/generateExpression.1/%/%.1/%">
+      <details key="start" value="1476"/>
+      <details key="end" value="1481"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/generateExpression.1/%/%.1/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/generateExpression.1/%/%.2">
+      <details key="start" value="1504"/>
+      <details key="end" value="1506"/>
+      <details key="line" value="63"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/generateExpression.1/%/%.3">
+      <details key="start" value="1442"/>
+      <details key="end" value="1471"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/generateExpression.1/%/%.3/%">
+      <details key="start" value="1446"/>
+      <details key="end" value="1470"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/generateExpression.1/%/%.3/%/%">
+      <details key="start" value="1447"/>
+      <details key="end" value="1452"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/generateExpression.1/%/%.3/%/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/generateExpression.1/%.1">
+      <details key="start" value="1513"/>
+      <details key="end" value="1514"/>
+      <details key="line" value="65"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/generateExpression.1/%.2">
+      <details key="start" value="1515"/>
+      <details key="end" value="1524"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/generateExpression.1/%.2/e">
+      <details key="start" value="1515"/>
+      <details key="end" value="1516"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/generateExpression.1/%.3">
+      <details key="start" value="1526"/>
+      <details key="end" value="1528"/>
+      <details key="line" value="65"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/generateExpression.1/%.4">
+      <details key="start" value="1529"/>
+      <details key="end" value="1617"/>
+      <details key="line" value="66"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/generateExpression.1/%.4/%">
+      <details key="start" value="1582"/>
+      <details key="end" value="1584"/>
+      <details key="line" value="67"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/generateExpression.1/%.4/%.1">
+      <details key="start" value="1585"/>
+      <details key="end" value="1607"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/generateExpression.1/%.4/%.1/a">
+      <details key="start" value="1585"/>
+      <details key="end" value="1586"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/generateExpression.1/%.4/%.2">
+      <details key="start" value="1609"/>
+      <details key="end" value="1610"/>
+      <details key="line" value="68"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/generateExpression.1/%.4/a">
+      <details key="start" value="1535"/>
+      <details key="end" value="1550"/>
+      <details key="line" value="66"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/generateExpression.1/%.4/%.3">
+      <details key="start" value="1553"/>
+      <details key="end" value="1564"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/generateExpression.1/%.4/%.3/e">
+      <details key="start" value="1553"/>
+      <details key="end" value="1554"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/generateExpression.1/%.4/%.4">
+      <details key="start" value="1576"/>
+      <details key="end" value="1579"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/generateExpression.1/%.5">
+      <details key="start" value="1618"/>
+      <details key="end" value="1620"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/generateExpression.1/e">
+      <details key="start" value="1417"/>
+      <details key="end" value="1434"/>
+      <details key="line" value="61"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/generateExpression.2">
+      <details key="start" value="1634"/>
+      <details key="end" value="1813"/>
+      <details key="line" value="72"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/generateExpression.2/%">
+      <details key="start" value="1686"/>
+      <details key="end" value="1691"/>
+      <details key="line" value="73"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/generateExpression.2/%.1">
+      <details key="start" value="1692"/>
+      <details key="end" value="1705"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/generateExpression.2/%.1/%">
+      <details key="start" value="1692"/>
+      <details key="end" value="1700"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/generateExpression.2/%.1/%/e">
+      <details key="start" value="1692"/>
+      <details key="end" value="1693"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/generateExpression.2/%.2">
+      <details key="start" value="1707"/>
+      <details key="end" value="1709"/>
+      <details key="line" value="73"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/generateExpression.2/%.3">
+      <details key="start" value="1710"/>
+      <details key="end" value="1798"/>
+      <details key="line" value="74"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/generateExpression.2/%.3/%">
+      <details key="start" value="1763"/>
+      <details key="end" value="1765"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/generateExpression.2/%.3/%.1">
+      <details key="start" value="1766"/>
+      <details key="end" value="1788"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/generateExpression.2/%.3/%.1/a">
+      <details key="start" value="1766"/>
+      <details key="end" value="1767"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/generateExpression.2/%.3/%.2">
+      <details key="start" value="1790"/>
+      <details key="end" value="1791"/>
+      <details key="line" value="76"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/generateExpression.2/%.3/a">
+      <details key="start" value="1716"/>
+      <details key="end" value="1731"/>
+      <details key="line" value="74"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/generateExpression.2/%.3/%.3">
+      <details key="start" value="1734"/>
+      <details key="end" value="1745"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/generateExpression.2/%.3/%.3/e">
+      <details key="start" value="1734"/>
+      <details key="end" value="1735"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/generateExpression.2/%.3/%.4">
+      <details key="start" value="1757"/>
+      <details key="end" value="1760"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/generateExpression.2/%.4">
+      <details key="start" value="1799"/>
+      <details key="end" value="1801"/>
+      <details key="line" value="77"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/generateExpression.2/e">
+      <details key="start" value="1670"/>
+      <details key="end" value="1683"/>
+      <details key="line" value="72"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/generateExpression.3">
+      <details key="start" value="1815"/>
+      <details key="end" value="1899"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/generateExpression.3/%">
+      <details key="start" value="1873"/>
+      <details key="end" value="1875"/>
+      <details key="line" value="81"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/generateExpression.3/%.1">
+      <details key="start" value="1876"/>
+      <details key="end" value="1884"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/generateExpression.3/%.1/e">
+      <details key="start" value="1876"/>
+      <details key="end" value="1877"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/generateExpression.3/%.2">
+      <details key="start" value="1886"/>
+      <details key="end" value="1887"/>
+      <details key="line" value="81"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/generateExpression.3/e">
+      <details key="start" value="1851"/>
+      <details key="end" value="1870"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/generateExpression.4">
+      <details key="start" value="1901"/>
+      <details key="end" value="1980"/>
+      <details key="line" value="84"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/generateExpression.4/%">
+      <details key="start" value="1956"/>
+      <details key="end" value="1957"/>
+      <details key="line" value="85"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/generateExpression.4/%.1">
+      <details key="start" value="1958"/>
+      <details key="end" value="1966"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.166" references="/0/generateExpression.4/%.1/e">
+      <details key="start" value="1958"/>
+      <details key="end" value="1959"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.167" references="/0/generateExpression.4/e">
+      <details key="start" value="1937"/>
+      <details key="end" value="1953"/>
+      <details key="line" value="84"/>
+    </eAnnotations>
+    <eAnnotations source="positions.168" references="/0/generateExpression.5">
+      <details key="start" value="1982"/>
+      <details key="end" value="2063"/>
+      <details key="line" value="88"/>
+    </eAnnotations>
+    <eAnnotations source="positions.169" references="/0/generateExpression.5/%">
+      <details key="start" value="2032"/>
+      <details key="end" value="2033"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.170" references="/0/generateExpression.5/%.1">
+      <details key="start" value="2034"/>
+      <details key="end" value="2049"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.171" references="/0/generateExpression.5/%.1/%">
+      <details key="start" value="2034"/>
+      <details key="end" value="2044"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.172" references="/0/generateExpression.5/%.1/%/e">
+      <details key="start" value="2034"/>
+      <details key="end" value="2035"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.173" references="/0/generateExpression.5/e">
+      <details key="start" value="2018"/>
+      <details key="end" value="2029"/>
+      <details key="line" value="88"/>
+    </eAnnotations>
+    <eAnnotations source="positions.174" references="/0/generateInstruction">
+      <details key="start" value="2065"/>
+      <details key="end" value="2146"/>
+      <details key="line" value="92"/>
+    </eAnnotations>
+    <eAnnotations source="positions.175" references="/0/generateInstruction/%">
+      <details key="start" value="2121"/>
+      <details key="end" value="2134"/>
+      <details key="line" value="93"/>
+    </eAnnotations>
+    <eAnnotations source="positions.176" references="/0/generateInstruction/i">
+      <details key="start" value="2102"/>
+      <details key="end" value="2118"/>
+      <details key="line" value="92"/>
+    </eAnnotations>
+    <eAnnotations source="positions.177" references="/0/generateInstruction.1">
+      <details key="start" value="2148"/>
+      <details key="end" value="2284"/>
+      <details key="line" value="96"/>
+    </eAnnotations>
+    <eAnnotations source="positions.178" references="/0/generateInstruction.1/%">
+      <details key="start" value="2203"/>
+      <details key="end" value="2204"/>
+      <details key="line" value="97"/>
+    </eAnnotations>
+    <eAnnotations source="positions.179" references="/0/generateInstruction.1/%.1">
+      <details key="start" value="2205"/>
+      <details key="end" value="2222"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.180" references="/0/generateInstruction.1/%.1/%">
+      <details key="start" value="2205"/>
+      <details key="end" value="2211"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.181" references="/0/generateInstruction.1/%.1/%/d">
+      <details key="start" value="2205"/>
+      <details key="end" value="2206"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.182" references="/0/generateInstruction.1/%.2">
+      <details key="start" value="2224"/>
+      <details key="end" value="2225"/>
+      <details key="line" value="97"/>
+    </eAnnotations>
+    <eAnnotations source="positions.183" references="/0/generateInstruction.1/%.3">
+      <details key="start" value="2226"/>
+      <details key="end" value="2232"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.184" references="/0/generateInstruction.1/%.3/d">
+      <details key="start" value="2226"/>
+      <details key="end" value="2227"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.185" references="/0/generateInstruction.1/%.4">
+      <details key="start" value="2234"/>
+      <details key="end" value="2237"/>
+      <details key="line" value="97"/>
+    </eAnnotations>
+    <eAnnotations source="positions.186" references="/0/generateInstruction.1/%.5">
+      <details key="start" value="2238"/>
+      <details key="end" value="2269"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.187" references="/0/generateInstruction.1/%.5/%">
+      <details key="start" value="2238"/>
+      <details key="end" value="2248"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.188" references="/0/generateInstruction.1/%.5/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.189" references="/0/generateInstruction.1/%.6">
+      <details key="start" value="2271"/>
+      <details key="end" value="2272"/>
+      <details key="line" value="97"/>
+    </eAnnotations>
+    <eAnnotations source="positions.190" references="/0/generateInstruction.1/d">
+      <details key="start" value="2185"/>
+      <details key="end" value="2200"/>
+      <details key="line" value="96"/>
+    </eAnnotations>
+    <eAnnotations source="positions.191" references="/0/generateInstruction.2">
+      <details key="start" value="2286"/>
+      <details key="end" value="2380"/>
+      <details key="line" value="100"/>
+    </eAnnotations>
+    <eAnnotations source="positions.192" references="/0/generateInstruction.2/%">
+      <details key="start" value="2341"/>
+      <details key="end" value="2342"/>
+      <details key="line" value="101"/>
+    </eAnnotations>
+    <eAnnotations source="positions.193" references="/0/generateInstruction.2/%.1">
+      <details key="start" value="2343"/>
+      <details key="end" value="2365"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.194" references="/0/generateInstruction.2/%.1/e">
+      <details key="start" value="2343"/>
+      <details key="end" value="2344"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.195" references="/0/generateInstruction.2/%.2">
+      <details key="start" value="2367"/>
+      <details key="end" value="2368"/>
+      <details key="line" value="101"/>
+    </eAnnotations>
+    <eAnnotations source="positions.196" references="/0/generateInstruction.2/e">
+      <details key="start" value="2323"/>
+      <details key="end" value="2338"/>
+      <details key="line" value="100"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

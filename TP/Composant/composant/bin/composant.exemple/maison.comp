@@ -1,0 +1,9 @@
+component maison {
+	component detecteur(in portInit, out portDetection) 
+	{properties "type" := "DetecteurFumee"}
+	component bouton(out press) {properties "type" := "BoutonPoussoir"}
+	component lampe (in commande) {properties "type" := "Lampe"}
+	connecteurDetecteur2Lampe : detecteur.portDetection -> lampe.commande
+	connecteurBouton2Detecteur : bouton.press -> detecteur.portInit
+	connecteurBouton2Lampe : bouton.press -> lampe.commande
+}

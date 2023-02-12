@@ -1,0 +1,98 @@
+modeltype Cmp uses "http://composant";
+modeltype Java uses "http:///myJava";
+
+transformation C2J(in src: Cmp, out dst: Java);
+
+main() {
+	src.rootObjects()[Composant] -> map Composant2Classe ();
+	
+}
+
+mapping Composant::Composant2Classe() : JClasse {
+	result.name:= "C" + self.name;
+
+	result._extends += object JClasseLibrairie {
+		name := "ComposantGraphique"
+	};
+	
+	 result.attributs += object JAttribut{
+        name := "panneau";
+        type := object TypeBase{
+            name := "JPanel";
+        };
+        val_init := object JCreation{
+        	classe := object JClasseLibrairie {
+                name := "JPanel";
+            }
+        };
+    };      
+    
+    
+    
+    
+    result.methodes += object JConstructeur {
+    	name := "C" + self.name;
+    	parametres += object JParametre {
+    	    name := "nom";
+    		type := object TypeBase{
+            	name := "String";
+        	};
+    	};
+    	parametres += object JParametre {
+    		name := "hauteur";
+    		type := object TypeBase{
+            	name := "int";
+        	};
+    	};
+    	parametres += object JParametre {
+    	    name := "largeur";
+    		type := object TypeBase{
+            	name := "int";
+        	};
+    	};
+    	instructions += object JAppelMethode {
+            methode := "super";
+            
+            arguments += object JVarRef {
+                variable := object JAttribut {
+                    name := "nom";
+                }
+            };
+            
+            arguments += object JVarRef {
+                variable := object JAttribut {
+                    name := "hauteur";
+                }
+            };
+            
+            arguments += object JVarRef {
+                variable := object JAttribut {
+                    name := "largeur";
+                }
+            };
+    	};
+    	instructions += object JAppelMethode {
+    		methode := "initComposant";
+    		
+    		arguments += object JVarRef {
+    			variable := object JAttribut {
+    				name := "p";
+    			}
+    		};
+    	};
+    };
+    
+    result.methodes += object JMethode {
+    	name := "initComposant";
+    	parametres += object JParametre {
+    		name := "p";
+    		type := object TypeBase{
+            	name := "JPanel";
+        	}
+    	};
+    }
+    
+}
+
+
+

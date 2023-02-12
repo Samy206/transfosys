@@ -1,0 +1,19 @@
+# 17/11/2022 10:35:14 CET
+# Eclipse Compiler for Java(TM) v20220831-1439, 3.31.0, Copyright IBM Corp 2000, 2020. All rights reserved.
+----------
+1. WARNING in /Users/allo/Desktop/M2/IngeSysteme/transfoModel/TP/MyJava/myjava.genarator.ui/src/myjava/genarator/ui/common/GenerateAll.java (at line 14)
+	import java.util.ArrayList;
+	       ^^^^^^^^^^^^^^^^^^^
+The import java.util.ArrayList is never used
+----------
+2. WARNING in /Users/allo/Desktop/M2/IngeSysteme/transfoModel/TP/MyJava/myjava.genarator.ui/src/myjava/genarator/ui/common/GenerateAll.java (at line 17)
+	import org.eclipse.emf.common.util.BasicMonitor;
+	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The import org.eclipse.emf.common.util.BasicMonitor is never used
+----------
+3. WARNING in /Users/allo/Desktop/M2/IngeSysteme/transfoModel/TP/MyJava/myjava.genarator.ui/src/myjava/genarator/ui/common/GenerateAll.java (at line 31)
+	private URI modelURI;
+	            ^^^^^^^^
+The value of the field GenerateAll.modelURI is not used
+----------
+3 problems (3 warnings)

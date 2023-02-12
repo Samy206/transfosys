@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="MyJava/MyJava.editor/src-gen/|Composant/composant.xtext.comp/src/|Composant/composant.xtext.comp.ui/src/|Composant/composant.xtext.comp/xtend-gen/|MyJava/MyJava.edit/src-gen/|MyJava/myjava.generator/src/|MyJava/myjava.genarator.ui/src/|Composant/composant.editor/src-gen/|Composant/composant.xtext.comp.ide/src-gen/|MyJava/MyJava/src-gen/|Composant/composant.edit/src-gen/|Composant/composant.xtext.comp/src-gen/|Composant/composant.xtext.comp.ui/src-gen/|Composant/composant/src-gen/|Composant/composant.xtext.comp.ide/src/" kind="src" path=""/>
+	<classpathentry kind="output" path="Composant/composant/bin"/>
+</classpath>

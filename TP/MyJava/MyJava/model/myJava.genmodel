@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/MyJava/src-gen" creationIcons="false" editDirectory="/MyJava.edit/src-gen"
+    editorDirectory="/MyJava.editor/src-gen" modelPluginID="MyJava" modelName="MyJava"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>myJava.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="MyJava" disposableProviderFactory="true" ecorePackage="myJava.ecore#/">
+    <genClasses ecoreClass="myJava.ecore#//JTypeDecl">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//JTypeDecl/name"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JClasse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JClasse/classesInternes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JClasse/extends"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JClasse/methodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JClasse/attributs"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JClasseLibrairie"/>
+    <genClasses ecoreClass="myJava.ecore#//JMethode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//JMethode/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JMethode/instructions"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference myJava.ecore#//JMethode/parametres"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JAttribut">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JAttribut/val_init"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JInstruction"/>
+    <genClasses ecoreClass="myJava.ecore#//Declaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//Declaration/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JExpression"/>
+    <genClasses ecoreClass="myJava.ecore#//JAppelMethode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JAppelMethode/cible"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JAppelMethode/arguments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//JAppelMethode/methode"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JCreation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myJava.ecore#//JCreation/classe"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//JCreation/arguments"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JVarRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myJava.ecore#//JVarRef/variable"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//StringConstante">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//StringConstante/valeur"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//JConstructeur"/>
+    <genClasses ecoreClass="myJava.ecore#//JParametre"/>
+    <genClasses ecoreClass="myJava.ecore#//JType"/>
+    <genClasses ecoreClass="myJava.ecore#//TypeRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference myJava.ecore#//TypeRef/type"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//TypeBase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//TypeBase/name"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//DonneeTypee">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference myJava.ecore#//DonneeTypee/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//DonneeTypee/name"/>
+    </genClasses>
+    <genClasses ecoreClass="myJava.ecore#//IntConstante">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute myJava.ecore#//IntConstante/valeur"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="PluginExportWizard">
+		<item key="exportType" value="3"/>
+		<item key="installDestination0" value="/Users/allo/Desktop/M2/IngeSysteme/transfoModel/TP/.metadata/.plugins/org.eclipse.pde.core/install/"/>
+		<item key="installDestination1" value="/Users/allo/Desktop/M2/IngeSysteme/transfoModel/TP/.metadata/.plugins/org.eclipse.pde.core/install/"/>
+		<item key="exportUpdate" value="true"/>
+		<item key="exportSource" value="false"/>
+		<item key="exportSourceFormat" value="Generate source bundles"/>
+		<item key="saveAsAnt" value="false"/>
+		<item key="qualifier" value="false"/>
+		<item key="qualifierName" value="202211171035"/>
+		<item key="allowBinaryCycles" value="true"/>
+		<item key="useWorkspaceCompiledClasses" value="false"/>
+		<item key="signJAR" value="false"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+</section>

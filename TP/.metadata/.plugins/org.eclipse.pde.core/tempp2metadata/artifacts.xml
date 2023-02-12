@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/Users/allo/Desktop/M2/IngeSysteme/transfoModel/TP/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1668678106993'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='11'>
+    <artifact classifier='osgi.bundle' id='composant.edit' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='17676'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='composant' version='0.1.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='33697'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='MyJava' version='0.1.2.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='65619'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='myjava.generator' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='4750'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='composant.xtext.comp.ide' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='36104'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='composant.editor' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='61457'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='MyJava.editor' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='60851'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='MyJava.edit' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='47450'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='myjava.genarator.ui' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='7505'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='composant.xtext.comp' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='69240'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='composant.xtext.comp.ui' version='1.0.0.202211171041'>
+      <properties size='1'>
+        <property name='download.size' value='15757'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

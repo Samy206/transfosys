@@ -1,0 +1,102 @@
+[comment encoding = UTF-8 /]
+[module generate('http:///myJava')]
+
+
+[template public generateElement(aJClasse : JClasse)]
+[comment @main /]
+[file (aJClasse.name.concat('.java'), false, 'UTF-8')]
+package [aJClasse.name.substring(2)/];
+
+import librairie.*;
+import javax.swing.JPanel;
+
+	public class [aJClasse.name/]
+		[for (e : JTypeDecl | aJClasse.extends) before ('extends') separator (',')]
+		[e.name/]
+		[/for]
+	{
+		private static final long serialVersionUID = 1L;
+
+		public static void main(String['[]'/] args) {
+			new [aJClasse.name/]("[aJClasse.name/]", 400, 900);
+		}
+
+		[for (a : JAttribut | aJClasse.attributs)]
+		private [a.type.typeName()/] [a.name/]
+		[if (not (a.val_init.oclIsUndefined()))]
+			= [val_init.generateExpression()/]
+		[/if];
+		[/for]
+
+		 [for (m : JMethode | aJClasse.methodes)]
+		 	public [if (m.oclIsTypeOf(JMethode))]void [/if] [m.name/] (
+			[for (p : JParametre | m.parametres) separator (',')]
+				[p.type.typeName()/] [p.name/]
+			[/for]) {
+				[for (i : JInstruction | m.instructions)]
+					[i.generateInstruction()/]
+				[/for]
+			}
+		 [/for]
+	}
+
+[/file]
+[/template]
+
+[template public typeName(jt : JType)]
+[/template]
+
+[template public typeName(jt : TypeRef)]
+	[jt.type.name/]
+[/template]
+
+[template public typeName(jt : TypeBase)]
+	[jt.name/]
+[/template]
+
+[template public generateExpression(e : JExpression)]
+	template_expression
+[/template]
+
+[template public generateExpression(e : JAppelMethode)]
+	[if (not(cible.oclIsUndefined()))]
+		[cible.generateExpression()/].
+	[/if]
+	[e.methode/](
+	[for (a : JExpression | e.arguments)separator (',')]
+		[a.generateExpression()/]
+	[/for]
+	)
+[/template]
+
+[template public generateExpression(e : JCreation)]
+	new [e.classe.name/](
+	[for (a : JExpression | e.arguments)separator (',')]
+		[a.generateExpression()/]
+	[/for]
+	)
+[/template]
+
+[template public generateExpression(e : StringConstante)]
+	"[e.valeur/]"
+[/template]
+
+[template public generateExpression(e : IntConstante)]
+	[e.valeur/]
+[/template]
+
+[template public generateExpression(e : JVarRef)]
+	[e.variable.name/]
+[/template]
+
+[template public generateInstruction(i : JInstruction)]
+	instructions
+[/template]
+
+[template public generateInstruction(d : Declaration)]
+	[d.type.typeName()/] [d.name/] = [expression.generateExpression()/];
+[/template]
+
+[template public generateInstruction(e : JExpression)]
+	[e.generateExpression()/];
+[/template]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:myJava="http:///myJava">
+  <myJava:JClasse name="Cmaison">
+    <extends xsi:type="myJava:JClasseLibrairie" name="ComposantGraphique"/>
+    <methodes xsi:type="myJava:JConstructeur" name="Cmaison">
+      <instructions xsi:type="myJava:JAppelMethode" methode="super">
+        <arguments xsi:type="myJava:JVarRef" variable="/2"/>
+        <arguments xsi:type="myJava:JVarRef" variable="/3"/>
+        <arguments xsi:type="myJava:JVarRef" variable="/4"/>
+      </instructions>
+      <instructions xsi:type="myJava:JAppelMethode" methode="initComposant">
+        <arguments xsi:type="myJava:JVarRef" variable="/5"/>
+      </instructions>
+      <parametres name="nom">
+        <type xsi:type="myJava:TypeBase" name="String"/>
+      </parametres>
+      <parametres name="hauteur">
+        <type xsi:type="myJava:TypeBase" name="int"/>
+      </parametres>
+      <parametres name="largeur">
+        <type xsi:type="myJava:TypeBase" name="int"/>
+      </parametres>
+    </methodes>
+    <methodes name="initComposant">
+      <parametres name="p">
+        <type xsi:type="myJava:TypeBase" name="JPanel"/>
+      </parametres>
+    </methodes>
+    <attributs name="panneau">
+      <type xsi:type="myJava:TypeBase" name="JPanel"/>
+      <val_init xsi:type="myJava:JCreation" classe="/1"/>
+    </attributs>
+  </myJava:JClasse>
+  <myJava:JClasseLibrairie name="JPanel"/>
+  <myJava:JAttribut name="nom"/>
+  <myJava:JAttribut name="hauteur"/>
+  <myJava:JAttribut name="largeur"/>
+  <myJava:JAttribut name="p"/>
+</xmi:XMI>

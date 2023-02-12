@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="myJava" nsURI="http:///myJava" nsPrefix="myJava">
+  <eClassifiers xsi:type="ecore:EClass" name="JTypeDecl" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JClasse" eSuperTypes="#//JTypeDecl">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classesInternes" upperBound="-1"
+        eType="#//JTypeDecl" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" upperBound="-1"
+        eType="#//JTypeDecl" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methodes" upperBound="-1"
+        eType="#//JMethode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributs" upperBound="-1"
+        eType="#//JAttribut" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JClasseLibrairie" eSuperTypes="#//JTypeDecl"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JMethode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructions" upperBound="-1"
+        eType="#//JInstruction" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parametres" upperBound="-1"
+        eType="#//JParametre" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JAttribut" eSuperTypes="#//DonneeTypee">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="val_init" eType="#//JExpression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JInstruction" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Declaration" eSuperTypes="#//JInstruction #//DonneeTypee">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" lowerBound="1"
+        eType="#//JExpression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JExpression" abstract="true" eSuperTypes="#//JInstruction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JAppelMethode" eSuperTypes="#//JExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cible" eType="#//JExpression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
+        eType="#//JExpression" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="methode" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JCreation" eSuperTypes="#//JExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classe" lowerBound="1"
+        eType="#//JTypeDecl"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
+        eType="#//JExpression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JVarRef" eSuperTypes="#//JExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
+        eType="#//DonneeTypee"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StringConstante" eSuperTypes="#//JExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valeur" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JConstructeur" eSuperTypes="#//JMethode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JParametre" eSuperTypes="#//DonneeTypee"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeRef" eSuperTypes="#//JType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="#//JTypeDecl"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeBase" eSuperTypes="#//JType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DonneeTypee" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="#//JType"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntConstante" eSuperTypes="#//JExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valeur" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: composant.xtext.comp
+Bundle-ManifestVersion: 2
+Bundle-Name: composant.xtext.comp
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: composant.xtext.comp; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: composant,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: composant.xtext.comp.generator,
+ composant.xtext.comp.scoping,
+ composant.xtext.comp.validation,
+ composant.xtext.comp.serializer,
+ composant.xtext.comp.parser.antlr.internal,
+ composant.xtext.comp.formatting2,
+ composant.xtext.comp.services,
+ composant.xtext.comp.parser.antlr,
+ composant.xtext.comp
+Import-Package: org.apache.log4j
